@@ -1,0 +1,16 @@
+# Frontend
+node_modules/
+dist/
+build/
+.angular/
+
+# Backend
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# Common
+.env
+*.log

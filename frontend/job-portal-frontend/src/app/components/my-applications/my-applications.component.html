@@ -1,0 +1,37 @@
+<div class="container mt-4">
+
+<h2 class="mb-4 text-center">My Job Applications</h2>
+
+<table class="table table-bordered table-striped">
+
+<thead class="table-dark">
+
+<tr>
+<th>Job Title</th>
+<th>Company</th>
+<th>Location</th>
+<th>Status</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr *ngFor="let app of applications">
+
+<td>{{app.jobTitle}}</td>
+<td>{{app.company}}</td>
+<td>{{app.location}}</td>
+<td>
+<span class="badge bg-warning">
+{{app.status || 'Applied'}}
+</span>
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>

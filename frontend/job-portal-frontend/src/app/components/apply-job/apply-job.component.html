@@ -1,0 +1,108 @@
+<div class="container mt-5">
+
+<div class="row justify-content-center">
+
+<div class="col-md-7">
+
+<div class="card shadow">
+
+<div class="card-body">
+
+<h3 class="mb-4 text-center">Apply for Job</h3>
+
+<!-- Job ID -->
+<div class="mb-3">
+<label class="form-label">Job ID</label>
+<input
+class="form-control"
+[(ngModel)]="application.jobId"
+readonly>
+</div>
+
+<!-- Full Name -->
+<div class="mb-3">
+<label class="form-label">Full Name</label>
+<input
+type="text"
+class="form-control"
+placeholder="Enter your name"
+[(ngModel)]="application.fullName">
+</div>
+
+<!-- Email -->
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input
+type="email"
+class="form-control"
+placeholder="Enter your email"
+[(ngModel)]="application.email">
+</div>
+
+<!-- Phone -->
+<div class="mb-3">
+<label class="form-label">Phone Number</label>
+<input
+type="text"
+class="form-control"
+placeholder="Enter phone number"
+[(ngModel)]="application.phone">
+</div>
+
+<!-- Experience -->
+<div class="mb-3">
+<label class="form-label">Years of Experience</label>
+<input
+type="number"
+class="form-control"
+placeholder="Enter experience"
+[(ngModel)]="application.experience">
+</div>
+
+<!-- Skills -->
+<div class="mb-3">
+<label class="form-label">Skills</label>
+<input
+type="text"
+class="form-control"
+placeholder="Example: Angular, Java, SQL"
+[(ngModel)]="application.skills">
+</div>
+
+<!-- Resume -->
+<div class="mb-3">
+<label class="form-label">Upload Resume</label>
+<input
+type="file"
+class="form-control"
+(change)="onFileSelected($event)">
+</div>
+
+<!-- Cover Letter -->
+<div class="mb-3">
+<label class="form-label">Cover Letter</label>
+<textarea
+class="form-control"
+rows="4"
+placeholder="Write your message"
+[(ngModel)]="application.coverLetter">
+</textarea>
+</div>
+
+<button
+class="btn btn-success w-100"
+(click)="apply()">
+
+Submit Application
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
